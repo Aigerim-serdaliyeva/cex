@@ -502,6 +502,16 @@
       &__title {
         font-size: 20px;
       }
+      .cex {
+        align-items: center;
+        img {
+          max-width: 140px;
+          margin-right: 15px;
+        }
+        &__title {
+          font-size: 18px;
+        }
+      }
     }
 
     &-month {
@@ -635,13 +645,14 @@
     &-thanks {
       padding: 150px 0 50px;
       
-      &-title {
-        font-size: 30px;
+
+      &__text {
+        font-size: 18px;
+        margin-bottom: 60px;
       }
 
-      &-text {
-        font-size: 16px;
-        margin-bottom: 40px;
+      &__link {
+        font-size: 14px;
       }
     }
   }
