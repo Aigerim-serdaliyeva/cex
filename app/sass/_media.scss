@@ -101,6 +101,28 @@
    }
   }
 
+  .trainer {
+    max-width: 700px;
+    margin: 0 auto;
+    &__image {
+      margin: 0 auto 15px;
+      display: block;
+    }
+    &__content {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    &__img {
+      display: none;
+    }
+    .button {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
   .s {
     &-main {
       padding: 200px 0 150px;
@@ -178,6 +200,9 @@
     }
 
     &-fenomen {
+      .trainer__content {
+        display: none;
+      }
       &__img {
         display: none;
       }
@@ -193,6 +218,20 @@
       &__text {
         font-size: 30px;
         margin-left: 0;
+      }
+    }
+
+    &-trainer {
+      &__content {
+        background-color: #fff;
+        color: #000000;
+        padding: 0;
+      }
+      .carousel-trainers {
+        display: none;
+      }
+      &__block {
+        display: block;
       }
     }
 
@@ -278,7 +317,7 @@
 
   .section {
     &-title {
-      font-size: 24px;
+      font-size: 26px;
     }      
   }
 
@@ -529,8 +568,7 @@
       &__doxod {
         font-size: 16px;
         span {
-          font-size: 30px;
-          letter-spacing: -0.3px;
+          font-size: 30px !important;
         }
       }
     }

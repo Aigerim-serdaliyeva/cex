@@ -189,6 +189,11 @@ $(document).ready(function () {
     $label.find("video")[0].pause();
   });
 
+  $(".trainer__button").click( function() {
+    $(this).parent().toggleClass("active");
+    $(this).next().slideToggle();
+  });
+
   $(".carousel-result").owlCarousel({
     loop: false,
     dots: false,
