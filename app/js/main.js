@@ -191,8 +191,12 @@ $(document).ready(function () {
 
   $(".trainer__button").click( function() {
     $(this).parent().toggleClass("active");
-    $(this).next().slideToggle();
+    $(this).next().slideToggle(900);
   });
+
+  $(".button__eshe").click(function() {
+    $(this).next().toggleClass("active");
+  })
 
   $(".carousel-result").owlCarousel({
     loop: false,

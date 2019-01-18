@@ -104,6 +104,9 @@
   .trainer {
     max-width: 700px;
     margin: 0 auto;
+    &__name {
+      text-align: center;
+    }
     &__image {
       margin: 0 auto 15px;
       display: block;

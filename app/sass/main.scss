@@ -555,6 +555,15 @@
 .s-trainer {
   padding: 40px 0 50px;
 
+  .button__eshe {
+    font-size: 20px;
+    font-weight: bold;
+    color: $accent;
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+  }
+
   &__block {
     display: none;
   }
@@ -640,6 +649,13 @@
     width: 130px;
     height: 160px;
     background-color: #fff;
+  }
+
+  &__eshe {
+    display: none;
+    &.active {
+      display: block;
+    }
   }
 
   .button {
