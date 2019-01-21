@@ -196,6 +196,7 @@ $(document).ready(function () {
 
   $(".button__eshe").click(function() {
     $(this).next().toggleClass("active");
+    $(this).addClass("d-none");
   })
 
   $(".carousel-result").owlCarousel({
