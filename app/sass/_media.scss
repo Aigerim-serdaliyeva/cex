@@ -754,6 +754,14 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .s-video {
+    &__img {
+      right: -14% !important;
+    }
+  }
+}
+
 
 @media screen and (max-width: 1920px) {
   .s-video {
