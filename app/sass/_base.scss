@@ -224,6 +224,10 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   cursor: pointer;
 
+  &--min {
+    font-size: 14px;
+  }
+
   &:hover {
     box-shadow: 0px 0px 15px 0px rgba(198, 198, 198, 0.4);
   }    
@@ -494,6 +498,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .form__content {
       max-width: 185px;
+      &--big {
+        max-width: 240px;
+      }
     }
   }
 

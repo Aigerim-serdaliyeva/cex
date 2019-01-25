@@ -401,7 +401,7 @@
               <li>Выпускница программ ЦЕХ, МЗС, Метаморфозы;</li>
               <li>Аттестованный тренер.</li>
             </ul>
-            <button class="button">Получить личную консультацию</button>
+            <button class="button" data-remodal-target="polu4it-konsultasiu">Получить личную консультацию</button>
           </div>
         </div>
         <div class="s-organizator__line"></div>
@@ -777,6 +777,31 @@
           </div>
 
           <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать звонок</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="remodal remodal--small" data-remodal-id="polu4it-konsultasiu" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+
+    <div class="remodal__title">Оставьте заявку на личную консультацию Елены Синогач - представителя БМ в Казахстане</div>
+
+    <div class="form form--vertical">
+      <form action="/mail.php" method="post">
+        <div class="form__content form__content--big">
+          <input type="hidden" name="info" value="Получить личную консультацию">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Имя">
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Телефон*" required minlength="10">
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button button--min ajax-submit" type="submit" id="polu4it_li4nui_konsultasiu">Получить личную консультацию</button>
         </div>
       </form>
     </div>
