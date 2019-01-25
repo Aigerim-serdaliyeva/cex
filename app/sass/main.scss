@@ -552,6 +552,65 @@
   }
 }
 
+.s-organizator {
+
+  .section-title {
+    display: none;
+  }
+
+  &__line {
+    box-shadow: 0px 0px 47.94px 3.06px rgba(52, 10, 129, 0.5);
+    height: 2px;
+    width: 100%;
+    background-color: $accent;
+    z-index: 1;
+  }
+
+  .organizator {
+
+    &__img {
+      z-index: -1;
+      img {
+        z-index: -1;
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 80px;
+    }
+
+    &__name {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+  ul {
+    margin: 0 0 35px 0;
+    padding: 0;
+    li {
+      list-style: none;
+      font-size: 18px;
+      font-weight: 500;
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 15px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $accent;
+        border-radius: 50%;
+        left: 0;
+        top: 5px;
+      }
+    }
+  }
+}
+
 .s-trainer {
   padding: 40px 0 50px;
 
@@ -830,6 +889,67 @@
       width: 260px;
       margin: 0 auto;
       display: block;
+    }
+  }
+}
+
+.s-contact {
+  position: relative;
+  
+  .contact {
+    background-color: rgba(#d9d9d9, .8);
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      max-width: 1095px;
+      margin: 0 auto;
+    }        
+    
+    &__phone, &__address, &__info {
+      position: relative;   
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-size: 16px;
+      padding-left: 60px;
+      a {
+      }   
+      &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        background-repeat: no-repeat;
+      }
+    }
+    &__phone {
+      margin-right: 60px;
+      &::before {
+        background-image: url("../img/call.png");
+      }
+    }
+    &__address {
+      margin-right: 30px;
+      max-width: 260px;
+      &::before {
+        background-image: url("../img/address.png");
+      }
+    }
+    &__info {
+      margin-right: 60px;
+      &::before {
+        background-image: url("../img/email.png");
+      }
+    }
+    &__blank {
+      margin-right: 15px;
     }
   }
 }

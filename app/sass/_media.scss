@@ -31,6 +31,27 @@
       }
     }
   }
+  .s-contact {
+    .map {
+      & > ymaps {
+        height: 400px !important;
+      }
+    }
+    .contact {
+      position: relative;
+      padding: 30px 0;
+      &__content {
+        display: block;
+      }
+      &__phone, &__address, &__info {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+      }
+      &__address {
+        max-width: none;
+      }
+    }
+  }
 }
 
 // ≥992px
@@ -225,6 +246,28 @@
       }
     }
 
+    &-organizator {
+      .organizator {
+        &__title {
+          font-size: 28px;
+          margin-bottom: 30px;
+        }
+        &__name {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        &__img {
+        }
+      }
+      ul {
+        margin-bottom: 20px;
+        li {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
     &-trainer {
       &__content {
         background-color: #fff;
@@ -392,6 +435,30 @@
           &:first-child {
             margin-right: 40px;
           }
+        }
+      }
+    }
+    &-organizator {
+      .section-title {
+        display: block;
+      }
+      &__line {
+        display: none;
+      }
+      .button {
+        margin: 0 auto;
+        display: block;
+      }
+      .organizator {
+        &__title {
+          display: none;
+        }
+        &__img {
+          margin: 0 auto 25px;
+          text-align: center;
+        }
+        &__name {
+          text-align: center;
         }
       }
     }
@@ -680,6 +747,14 @@
         }
         &__price {
           margin: 20px 0 20px auto;
+        }
+      }
+    }
+
+    &-contact {
+      .map {
+        & > ymaps {
+          height: 300px !important;
         }
       }
     }
